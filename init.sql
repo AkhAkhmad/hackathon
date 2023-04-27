@@ -50,7 +50,9 @@ CREATE TABLE partners (
 );
 
 INSERT INTO users(login, email, password, role, first_name, last_name, father_name, date_of_birth, number, address, have_education, education, telegram_link, vkontakte_link, description) VALUES
-('athletic1', 'Ivan15@gmail.com', '12345', 'ATHLETIC', 'Ivan', 'Petrov', 'Ivanovich', '2000-01-01', '+79281112233', 'Russia, Moscow, arbat street, 43', false, null, 'ivan15', null, 'Athletic from Moscow');
+('athletic1', 'Ivan15@gmail.com', '12345', 'ATHLETIC', 'Ivan', 'Petrov', 'Ivanovich', '2000-01-01', '+79281112233', 'Russia, Moscow, Arbat street, 43', false, null, 'ivan15', null, 'Athletic from Moscow'),
+('athletic2', 'Igor10@gmail.com', '12345', 'ATHLETIC', 'Igor', 'Ivanov', null, '2000-04-01', '+79285552233', 'Russia, Saint Peterburg, Naberezhaya, 40', true, 'SPSU', 'igor10', null, 'Athletic from St P');
 
 INSERT INTO athletics(user_id, education, grade) VALUES
-(1, 'MSU', '3');
+(1, 'MSU', '3'),
+(2, null, null);
