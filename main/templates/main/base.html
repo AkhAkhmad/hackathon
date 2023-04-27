@@ -1,1 +1,146 @@
-True
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Document</title>
+</head>
+<body>
+{% block content %}
+<header class="header">
+    <div class="header__navigation">
+        <li class="header__list">
+            <ol>
+                <img src="./image/git-logo.webp" class="header__logo" style="list-style-type:none">
+            </ol>
+            <ol>
+                <a href="#" class="header__link">Новости</a>
+            </ol>
+            <ol>
+                <a href="#" class="header__link">Мероприятия</a>
+            </ol>
+            <ol>
+                <a href="#" class="header__link">О нас</a>
+            </ol>
+            <ol>
+                <a href="#" class="header__link">Контакты</a>
+            </ol>
+        </li>
+        <div class="header__button">
+            <span class="header__button__span"><a href="#" style="text-decoration: none; color: black;" id="right" >Войти</a></span>
+            <span class="header__button__span"><a href="#" style="text-decoration: none; color: black;" >Регистрация</a></span>
+        </div>
+    </div>
+</header>
+{% endblock %}
+<section class="NewInformation">
+    <p style="font-size: 30px; font-weight: bolder;" >
+        Ф С П
+    </p>
+    <p style="width: 30%;">
+        Сообщество пользователей, среди которых есть backend и frontend-разработчики, продакты и проджекты, мобильные разработчики, дата-сайентисты, аналитики, QA, Devops, UI/UX-дизайнеры и многие другие! Мы ждём участников из любых сфер.
+    </p>
+    <div class="NewInformation__logo">
+    </div>
+</section>
+    <div class="registration" >
+        <form action="">
+            <div class="registration__lable">
+                <label for="login" class="registration__lable">Логин</label><br>
+                <input type="text" name="login" id="login"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="name" class="registration__lable" >Имя</label><br>
+                <input type="text" name="name" id="name"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="surname" class="registration__lable" >Фамилия</label><br>
+                <input type="text" name="surname" id="surname"><br>
+            </div>
+            <div class="registration__lable">  
+                <label for="patronymic" class="registration__lable" >Отчество</label><br>
+                <input type="text" name="patronymic" id="patronymic"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="email" class="registration__lable" >Email</label><br>
+                <input type="email" name="email" id="email"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="role" class="registration__lable" >Укажите вашу роль</label><br>
+                <input type="text" name="role" id="role"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="password" class="registration__lable" >Пароль</label><br>
+                <input type="password" name="password" id="password"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="password" class="registration__lable" >Поавторите пароль</label><br>
+                <input type="password" name="password" id="password"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="phone" class="registration__lable" >Номер телефона</label><br>
+                <input type="tel" name="phone" id="phone"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="date" class="registration__lable" >Дата рождения</label><br>
+                <input type="date" name="date" id="date"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="mesto" class="registration__lable" > Место проживания(Страна,регион,населеный пункт)</label><br>
+                <input type="text" name="text" id="text"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="Education" class="registration__lable" >Оброзование</label><br>
+                <input type="text" name="text" id="text"><br>
+            </div>
+            <div class="registration__lable">
+                <p class="registration__lable">ССылки на соцсети</p>
+
+                <label for="telega" class="registration__lable">Телеграмм</label>
+                <input type="text" name="text" id="text"><br>
+                <label for="VK" class="registration__lable">ВКонтакте. </label>
+                <input type="text" name="text" id="text"><br>
+            </div>
+            <div class="registration__lable">
+                <label for="Education" class="registration__lable">О себе</label><br>
+                <input type="text" name="text" id="text" style="height: 60px;"><br>
+            </div>
+        </form>
+
+<div class="registration">
+    <form action="">
+        <div class="registration__lable">
+            <label for="login" class="registration__lable">Названия</label><br>
+            <input type="text" name="login" id="login"><br>
+        </div>
+        <div class="registration__lable">
+            <label for="name" class="registration__lable" >Дата начала</label><br>
+            <input type="text" name="name" id="name"><br>
+        </div>
+        <div class="registration__lable">
+            <label for="surname" class="registration__lable" >Дата конца</label><br>
+            <input type="text" name="surname" id="surname"><br>
+        </div>
+        <div class="registration__lable">  
+            <label for="patronymic" class="registration__lable" >призовой фонд</label><br>
+            <input type="text" name="patronymic" id="patronymic"><br>
+        </div>
+        <div class="registration__lable">  
+            <label for="patronymic" class="registration__lable" >Партнеры</label><br>
+            <input type="text" name="patronymic" id="patronymic"><br>
+        </div>
+        <div class="registration__lable">  
+            <label for="patronymic" class="registration__lable" >Описание</label><br>
+            <input type="text" name="patronymic" id="patronymic" style="height: 30px;"><br>
+        </div>      
+</div>
+<div class="personal_informatin">
+    <div class="logo"></div>
+
+</div>
+
+</body>
+</html>
