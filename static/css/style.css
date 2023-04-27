@@ -1,0 +1,11 @@
+* {
+    background-color: grey;
+}
+
+.text-end, .form {
+    margin-left: auto
+}
+
+.header {
+    margin-top: 10px;
+}
